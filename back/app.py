@@ -7,7 +7,8 @@ def home():
 
 @app.route('/quiz_result')
 def quiz_result():
-    
+    pass
+
 @app.route('/quiz')
 def quiz():# 添加測試問題數據
     questions = [
