@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <title>Emotional Eating Habits -- Test</title>
+        <style>
+        body {
+        background-color: #f6f4d6;
+        }
+        h1 {
+            color: #826666;
+            background-color: #ffffff;
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .p1{
+            text-align: center;
+            font-size: 44px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #9bc1ec;
+        }
+
+        li {
+            float: left;
+            margin: 10px auto;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        
+        li a, .dropbtn {
+            display: inline-block;
+            color: rgb(103, 77, 65);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: rgb(69, 162, 220);
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {background-color: #f8e9c8;}
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .option-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            height: 250px;
+            margin: 40px 0;
+            position: relative;
+            overflow: visible;
+            padding-top: 30px;
+        }
+
+        .option {
+            position: relative;
+            border-radius: 10px;
+            background-color: rgb(216, 245, 249);
+            transition: all 0.2s ease;
+            min-width: 100px;
+            padding: 0 5px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-left: 10px;
+            outline: none;
+            margin-bottom: 30px;
+        }
+
+        .option:hover,
+        .option:focus {
+            transform: scale(1.2);
+            background-color: rgb(196, 230, 243);
+            border: 2px solid rgb(101, 199, 245);
+        }
+
+        .option:nth-of-type(1) {
+            height: 155px;
+        }
+
+        .option:nth-of-type(2) {
+            height: 135px;
+        }
+
+        .option:nth-of-type(3) {
+            height: 115px;
+        }
+
+        .option:nth-of-type(4) {
+            height: 70px;
+        }
+
+        .option:nth-of-type(5) {
+            height: 115px;
+        }
+
+        .option:nth-of-type(6) {
+            height: 135px;
+        }
+
+        .option:nth-of-type(7) {
+            height: 155px;
+        }
+
+        .option::after {
+            content: attr(data-text);
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .option:hover::after,
+        .option:focus::after {
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+            font-size: 24px;
+            color: #333;
+        }
+
+        hr {
+            width: 100%;
+            border: none;
+            border-top: 3px dashed #3e94f5c3;
+            margin: 20px 0;
+        }
+        .question-checkbox {
+        display: none;
+        }
+
+        .question-group {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .question-text {
+            transition: color 0.3s ease;
+        }
+suo
+        .option-container {
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            max-height: 200px;
+            opacity: 1;
+            overflow: hidden;
+        }
+
+        .question-checkbox:checked + .question-label .question-text {
+            color: #999999da;
+        }
+
+        .question-checkbox:checked + .question-label .option-container {
+            max-height: 0;
+            opacity: 0;
+            margin-bottom: 0;
+        }
+
+        .question-checkbox {
+            display: none;
+        }
+        </style> 
+    </head>
+    <body>
+        <ul>
+            <li><a href="#home">Emotional Eating</a></li>
+            <li><a href="#news">---Test---</a></li>
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Types ⌄</a>
+            <div class="dropdown-content">
+                <a href="#">· Boredom and emptiness type emotional eating</a>
+                <a href="#">· Anxiety type emotional eating</a>
+                <a href="#">· Stress type emotional eating</a>
+                <a href="#">· Depression type emotional eating</a>
+                <a href="#">· Trauma type emotional eating</a>
+                <a href="#">· Grief type emotional eating</a>
+                <a href="#">· Other types of emotional eating</a>
+            </div>
+            </li>
+        </ul>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1>Test for emotional eating</h1>
+        <br/>
+        <p>Please answer the following questions by your heart, so we can give you an accurate feedback and efficient therapy.</p>
+        <br>
+        <div class="p1">PART  I</div>
+        <br/>
+        <hr>
+        {% for question in questions %}
+            <div class="question-group">
+                <input type="checkbox" id="question{{question.no}}" class="question-checkbox">
+                <label for="question{{question.no}}" class="question-label">
+                    <p class="question-text">{{question.no}}. {{question.stem}}</p>
+                    <div class="option-container">
+                        <div class="option" name="1st" data-text="overjoyed" tabindex="0" onclick="checkValue(0)"></div>
+                        <div class="option" data-text="gratified" tabindex="0" onclick="checkValue(1)"></div>
+                        <div class="option" data-text="satisfied" tabindex="0"></div>
+                        <div class="option" data-text="neutral" tabindex="0"></div>
+                        <div class="option" data-text="disgruntled" tabindex="0"></div>
+                        <div class="option" data-text="discontented" tabindex="0"></div>
+                        <div class="option" data-text="seething" tabindex="0"></div>
+                    </div>
+                </label>
+                <hr>
+            </div>
+        {% endfor %}
+    </body>
+    <script>
+        var quiz_ans = ["netural", "netural", "netural", "netural", "netural"];
+        quiz_ans[4] = "satisfied"
+
+        function checkValue(index){
+            document.getElementByName("1st").value = quiz_ans[index];
+        }
+    </script>
+</html>
