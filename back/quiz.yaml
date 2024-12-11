@@ -1,0 +1,19 @@
+- question: "When you feel stressed, do you tend to eat more than usual?"
+  weight: 19
+  number: 1
+
+- question: "Do you eat when you are not physically hungry?"
+  weight: 20
+  number: 2
+
+- question: "Do you feel guilty after emotional eating?"
+  weight: 20
+  number: 3
+
+- question: "Do you turn to food when you feel lonely or bored?"
+  weight: 20
+  number: 4
+
+- question: "Do you use food as a way to cope with negative emotions?"
+  weight: 20
+  number: 5

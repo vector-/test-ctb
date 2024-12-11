@@ -1,4 +1,4 @@
-<html>
+<html></html>
     <head>
         <title>Emotional Eating Habits -- Test</title>
         <style>
@@ -15,12 +15,10 @@
             text-align: center;
             font-size: 22px;
         }
-
         .p1{
             text-align: center;
             font-size: 44px;
         }
-
         ul {
             list-style-type: none;
             margin: 0;
@@ -28,14 +26,12 @@
             overflow: hidden;
             background-color: #9bc1ec;
         }
-
         li {
             float: left;
             margin: 10px auto;
             margin-right: 10px;
             margin-left: 10px;
         }
-        
         li a, .dropbtn {
             display: inline-block;
             color: rgb(103, 77, 65);
@@ -43,15 +39,12 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-        
         li a:hover, .dropdown:hover .dropbtn {
             background-color: rgb(69, 162, 220);
         }
-        
         li.dropdown {
             display: inline-block;
         }
-        
         .dropdown-content {
             display: none;
             position: absolute;
@@ -60,7 +53,6 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
-        
         .dropdown-content a {
             color: black;
             padding: 12px 16px;
@@ -68,9 +60,7 @@
             display: block;
             text-align: left;
         }
-        
         .dropdown-content a:hover {background-color: #f8e9c8;}
-        
         .dropdown:hover .dropdown-content {
             display: block;
         }
@@ -85,7 +75,6 @@
             overflow: visible;
             padding-top: 30px;
         }
-
         .option {
             position: relative;
             border-radius: 10px;
@@ -103,42 +92,33 @@
             outline: none;
             margin-bottom: 30px;
         }
-
         .option:hover,
         .option:focus {
             transform: scale(1.2);
             background-color: rgb(196, 230, 243);
             border: 2px solid rgb(101, 199, 245);
         }
-
         .option:nth-of-type(1) {
             height: 155px;
         }
-
         .option:nth-of-type(2) {
             height: 135px;
         }
-
         .option:nth-of-type(3) {
             height: 115px;
         }
-
         .option:nth-of-type(4) {
             height: 70px;
         }
-
         .option:nth-of-type(5) {
             height: 115px;
         }
-
         .option:nth-of-type(6) {
             height: 135px;
         }
-
         .option:nth-of-type(7) {
             height: 155px;
         }
-
         .option::after {
             content: attr(data-text);
             position: absolute;
@@ -149,7 +129,6 @@
             font-size: 14px;
             transition: all 0.3s ease;
         }
-
         .option:hover::after,
         .option:focus::after {
             bottom: 50%;
@@ -157,7 +136,6 @@
             font-size: 24px;
             color: #333;
         }
-
         hr {
             width: 100%;
             border: none;
@@ -167,12 +145,10 @@
         .question-checkbox {
         display: none;
         }
-
         .question-group {
             margin-bottom: 10px;
             position: relative;
         }
-
         .question-text {
             transition: color 0.3s ease;
         }
@@ -183,19 +159,53 @@ suo
             opacity: 1;
             overflow: hidden;
         }
-
         .question-checkbox:checked + .question-label .question-text {
             color: #999999da;
         }
-
         .question-checkbox:checked + .question-label .option-container {
             max-height: 0;
             opacity: 0;
             margin-bottom: 0;
         }
-
         .question-checkbox {
             display: none;
+        }
+        .result-container {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 800px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        display: none;
+        }
+        .result-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: rgb(216, 245, 249);
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #9bc1ec;
+            border: none;
+            border-radius: 5px;
+            color: rgb(103, 77, 65);
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: rgb(69, 162, 220);
+        }
+        .option.selected {
+        transform: scale(1.2);
+        background-color: rgb(196, 230, 243);
+        border: 2px solid rgb(101, 199, 245);
         }
         </style> 
     </head>
@@ -215,12 +225,7 @@ suo
                 <a href="#">· Other types of emotional eating</a>
             </div>
             </li>
-        </ul>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        </ul><br/><br/><br/><br/><br/>
         <h1>Test for emotional eating</h1>
         <br/>
         <p>Please answer the following questions by your heart, so we can give you an accurate feedback and efficient therapy.</p>
@@ -228,14 +233,14 @@ suo
         <div class="p1">PART  I</div>
         <br/>
         <hr>
-        {% for question in questions %}
+        {% for quiz in questions %}
             <div class="question-group">
-                <input type="checkbox" id="question{{question.no}}" class="question-checkbox">
-                <label for="question{{question.no}}" class="question-label">
-                    <p class="question-text">{{question.no}}. {{question.stem}}</p>
+                <input type="checkbox" id="question{{quiz.number}}" class="question-checkbox">
+                <label for="question{{quiz.number}}" class="question-label">
+                    <p class="question-text">{{quiz.number}}. {{quiz.question}}</p>
                     <div class="option-container">
-                        <div class="option" name="1st" data-text="overjoyed" tabindex="0" onclick="checkValue(0)"></div>
-                        <div class="option" data-text="gratified" tabindex="0" onclick="checkValue(1)"></div>
+                        <div class="option" data-text="overjoyed" tabindex="0"></div>
+                        <div class="option" data-text="gratified" tabindex="0"></div>
                         <div class="option" data-text="satisfied" tabindex="0"></div>
                         <div class="option" data-text="neutral" tabindex="0"></div>
                         <div class="option" data-text="disgruntled" tabindex="0"></div>
@@ -246,13 +251,133 @@ suo
                 <hr>
             </div>
         {% endfor %}
-    </body>
-    <script>
-        var quiz_ans = ["netural", "netural", "netural", "netural", "netural"];
-        quiz_ans[4] = "satisfied"
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+        <!-- 添加結果顯示區域 -->
+        <div id="resultContainer" class="result-container">
+            <h2 style="text-align: center; color: #826666;">Quiz Results</h2>
+            <div id="resultContent"></div>
+        </div>
+        <script>
+            function submitQuiz() {
+                // 收集所有答案
+                const choices = [];
+                const options = document.querySelectorAll('.option-container');
+                options.forEach(container => {
+                    const selectedOption = container.querySelector('.option:focus');
+                    if (selectedOption) {
+                        choices.push(selectedOption.getAttribute('data-text'));
+                    }
+                });
+                if (choices.length === 0) {
+                    alert('Please answer at least one question before submitting.');
+                    return;
+                }
+                // 發送答案到後端
+                fetch('/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ choices: choices })
+                })
+                .then(response => response.json())
+                .then(result => {
+                    // 顯示結果
+                    const resultContainer = document.getElementById('resultContainer');
+                    const resultContent = document.getElementById('resultContent');
+                    resultContent.innerHTML = ''; // 清空之前的結果
 
-        function checkValue(index){
-            document.getElementByName("1st").value = quiz_ans[index];
-        }
-    </script>
+                    for (const [option, percentage] of Object.entries(result)) {
+                        const resultItem = document.createElement('div');
+                        resultItem.className = 'result-item';
+                        resultItem.innerHTML = `
+                            <strong>${option}:</strong> ${percentage.toFixed(1)}%
+                        `;
+                        resultContent.appendChild(resultItem);
+                    }
+                    // 顯示結果容器
+                    resultContainer.style.display = 'block';
+                    // 平滑滾動到結果區域
+                    resultContainer.scrollIntoView({ behavior: 'smooth' });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Submission failed. Please try again later.');
+                });
+                }
+                // 為每個選項添加鍵盤事件處理
+                document.querySelectorAll('.option').forEach(option => {
+                    option.addEventListener('keypress', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            this.focus();
+                        }
+                    });
+                });
+                document.querySelectorAll('.option').forEach(option => {
+                option.addEventListener('click', function() {
+                    // 移除同一組中其他選項的選中狀態
+                    const container = this.closest('.option-container');
+                    container.querySelectorAll('.option').forEach(opt => {
+                        opt.classList.remove('selected');
+                    });
+                    // 為當前選項添加選中狀態
+                    this.classList.add('selected');
+                });
+                // 保留原有的鍵盤事件處理
+                option.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click(); // 觸發點擊事件
+                    }
+                });
+                });
+            function submitQuiz() {
+                // 修改收集答案的方式
+                const choices = [];
+                const questions = document.querySelectorAll('.question-group');
+                questions.forEach((question, index) => {
+                    const selectedOption = question.querySelector('.option.selected');
+                    if (selectedOption) {
+                        choices.push(selectedOption.getAttribute('data-text'));
+                    }
+                });
+                if (choices.length === 0) {
+                    alert('Please answer at least one question before submitting.');
+                    return;
+                }
+                // 發送答案到後端
+                fetch('/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ choices: choices })
+                })
+                .then(response => response.json())
+                .then(result => {
+                    // 顯示結果
+                    const resultContainer = document.getElementById('resultContainer');
+                    const resultContent = document.getElementById('resultContent');
+                    resultContent.innerHTML = ''; // 清空之前的結果
+                    for (const [option, percentage] of Object.entries(result)) {
+                        const resultItem = document.createElement('div');
+                        resultItem.className = 'result-item';
+                        resultItem.innerHTML = `
+                            <strong>${option}:</strong> ${percentage.toFixed(1)}%
+                        `;
+                        resultContent.appendChild(resultItem);
+                    }
+                    // 顯示結果容器
+                    resultContainer.style.display = 'block';
+                    // 平滑滾動到結果區域
+                    resultContainer.scrollIntoView({ behavior: 'smooth' });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Submission failed. Please try again later.');
+                });
+                }
+        </script>
+    </body>
 </html>
