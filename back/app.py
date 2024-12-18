@@ -38,5 +38,17 @@ def submit():
     return calculate(choices)
 
 
+@app.route('/login', methods=['POST','GET'])
+def login():
+    return render_template("login.html", signup=True)
+
+
+@app.route('/login_submit', methods=['POST'])
+def login_post():
+    username = request.form.get('username')
+    password = request.form.get('password')
+    print(f"{username}--------{password}")
+    return jsonify({'message': 'submited ok'})
+
 if __name__ == '__main__':
     app.run(debug=True, port = 8888)

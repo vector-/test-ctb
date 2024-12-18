@@ -53,8 +53,12 @@
 </head>
 <body>
     <div class="login-container">
+        {% if not signup %}
         <h2 style="text-align: center;">User Login</h2>
-        <form action="/login" method="POST">
+        {% else %}
+        <h2 style="text-align: center;">User Signup</h2>
+        {% endif %}
+        <form action="/login_submit" method="POST">
             <div class="form-group">
                 <label for="username">User name 🍩:</label>
                 <input type="text" id="username" name="username" required>
@@ -62,6 +66,10 @@
             <div class="form-group">
                 <label for="password">Passkey 🍦:</label>
                 <input type="password" id="password" name="password" required>
+                {% if signup %}
+                <label for="checking_password">Repeat your password 🍦:</label>
+                <input type="password" id="checking_password" name="checking_password" required>
+                {% endif %}
             </div>
             <button type="submit">Submit</button>
         </form>
