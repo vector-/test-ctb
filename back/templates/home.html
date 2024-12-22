@@ -80,6 +80,45 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        .search-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .search-box {
+            display: flex;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 1px solid #ffeeb2;
+            background-color: rgb(254, 254, 238);
+            border-right: none;
+            border-radius: 25px 0 0 25px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-button {
+            padding: 12px 25px;
+            background: #beefff;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .search-button:hover {
+            background: #86d8f9;
+        }
         </style> 
     </head>
     <body>
@@ -111,6 +150,50 @@
         <br/>
         <br/>
         <button onclick="window.location.href='/test'">take the test</button>
-        <button onclick="window.location.href='/login'">Sign in!</button>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>      
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>      
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>      
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h2>If you have any questions want to ask, enter in this searching box!</h1>
+        <div class="search-container">
+            <form class="search-form" action="/search" method="GET">
+                <div class="search-box">
+                    <input type="text" 
+                        class="search-input" 
+                        name="q" 
+                        placeholder="Please enter things you wanna search..."
+                        required>
+                    
+                    <button type="submit" class="search-button">
+                        Search
+                    </button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
