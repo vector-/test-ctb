@@ -3,14 +3,80 @@
         <title>Emotional Eating Habits</title>
         <style>
         body {
-        background-color: #f6f4d6;
+            background-color: #f6f4d6;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
         }
+        
         h1 {
             color: #826666;
-            background-color: #ffffff;
-            font-size: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            font-size: 38px;
             text-align: center;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+
+        .main-button {
+            display: block;
+            margin: 30px auto;
+            font-size: 24px;
+            padding: 15px 40px;
+            border-radius: 25px;
+            border: none;
+            background-color: #9bc1ec;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .main-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+            background-color: #86b3e7;
+        }
+
+        .button1 {
+            display: block;
+            margin: 2px auto;
+            font-size: 16px;
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .button1:hover {
+            background-color: #fff;
+            transform: translateY(-1px);
+        }
+
+        ul {
+            background-color: #9bc1ec;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 0 20px;
+        }
+
+        .search-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #826666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
         p {
             text-align: center;
             font-size: 22px;
@@ -30,9 +96,9 @@
             font-size: 22px;
             padding: 10px 20px;
             border-radius: 10px;
-            border-color: rgb(236, 223, 136);
-            background-color: rgb(253, 242, 205);
-            color: rgb(80, 49, 22);
+            border-color: rgb(148, 147, 144);
+            background-color: rgb(255, 251, 239);
+            color: rgb(0, 0, 0);
         }
 
         li {
@@ -119,6 +185,21 @@
         .search-button:hover {
             background: #86d8f9;
         }
+        .button1 {
+            display: block;
+            margin: 2px auto; 
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border-color: rgb(114, 123, 129);
+            background-color: rgb(222, 238, 255);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        li:last-child {
+            float: right;
+            margin-right: 20px;
+        }
         </style> 
     </head>
     <body>
@@ -137,6 +218,7 @@
                 <a href="#">· Other types of emotional eating</a>
               </div>
             </li>
+            <li><button class="button1" onclick="window.location.href='/login'">Sign up!</button></li>
         </ul>
         <br/>
         <br/>
@@ -149,7 +231,7 @@
         <br/>
         <br/>
         <br/>
-        <button onclick="window.location.href='/test'">take the test</button>
+        <button class="main-button" onclick="window.location.href='/test'">Take the Test</button>
         <br/>
         <br/>
         <br/>
@@ -179,21 +261,22 @@
         <br/>
         <br/>
         <br/>
-        <h2>If you have any questions want to ask, enter in this searching box!</h1>
-        <div class="search-container">
-            <form class="search-form" action="/search" method="GET">
-                <div class="search-box">
-                    <input type="text" 
-                        class="search-input" 
-                        name="q" 
-                        placeholder="Please enter things you wanna search..."
-                        required>
-                    
-                    <button type="submit" class="search-button">
-                        Search
-                    </button>
-                </div>
-            </form>
+        <h2>Have questions? Search here!</h2>
+        <div class="search-section" style="margin-top: 60px;">
+            <div class="search-container">
+                <form class="search-form" action="/search" method="GET">
+                    <div class="search-box">
+                        <input type="text" 
+                            class="search-input" 
+                            name="q" 
+                            placeholder="What would you like to know?"
+                            required>
+                        <button type="submit" class="search-button">
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
