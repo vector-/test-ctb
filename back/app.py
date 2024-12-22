@@ -40,14 +40,24 @@ def submit():
 
 @app.route('/login', methods=['POST','GET'])
 def login():
-    return render_template("login.html", signup=True)
+    return render_template("login.html", signup=False)
 
 
+# route for signup
+# TODO define a route handler for signup
+
+
+# route for login
 @app.route('/login_submit', methods=['POST'])
 def login_post():
     username = request.form.get('username')
     password = request.form.get('password')
     print(f"{username}--------{password}")
+    # TODO validate the password for the user
+    # hint: compare password with the one stored inside the password file
+
+
+    # TODO decide the page being redirected to
     return jsonify({'message': 'submited ok'})
 
 if __name__ == '__main__':
