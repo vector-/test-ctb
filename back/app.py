@@ -40,11 +40,26 @@ def submit():
 
 @app.route('/login', methods=['POST','GET'])
 def login():
-    return render_template("login.html", signup=False)
+    return render_template("login.html", signup=True)
 
 
 # route for signup
 # TODO define a route handler for signup
+@app.route('/signup', methods=['POST'])
+def signup_post():
+    username = request.form.get('username')
+    pass1 = request.form.get('password')
+    pass2 = request.form.get('checking_password')
+
+    if pass1 == pass2:
+        # TODO write user name and password into a password file
+        return render_template("home.html", username=username)
+    else:
+        return jsonify(
+            {
+                'code': -1,
+                'message': 'Error: Two passwords are not same.'
+            })
 
 
 # route for login

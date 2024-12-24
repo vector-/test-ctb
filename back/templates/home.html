@@ -218,8 +218,11 @@
                 <a href="#">· Other types of emotional eating</a>
               </div>
             </li>
-            <! ---TODO--- for logined users: display the user name here instead of the 'Sign Up' button --->
+            {% if username %}
+            <li>Welcome {{ username }}</li>
+            {% else %}
             <li><button class="button1" onclick="window.location.href='/login'">Sign up!</button></li>
+            {% endif %}
         </ul>
         <br/>
         <br/>

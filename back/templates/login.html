@@ -108,7 +108,11 @@
         <h2 style="text-align: center;">User Signup</h2>
         {% endif %}
         
+        {% if signup %}
+        <form action="/signup" method="POST">
+        {% else %}
         <form action="/login_submit" method="POST">
+        {% endif %}
             <div class="form-group">
                 <label for="username">Username <span class="emoji">👤</span></label>
                 <input type="text" id="username" name="username" required>
