@@ -85,6 +85,20 @@ def login_post():
     username = request.form.get('username')
     password = request.form.get('password')
     print(f"{username}--------{password}")
+    for user in passwords:
+        if user['name'] == username:
+            if user['pass'] == password:
+                return render_template("home.html", username=username)
+            else:
+                return jsonify({
+                    'code': -1,
+                    'message': 'Wrong password.'
+                })
+
+    return jsonify({
+        'code': -1,
+        'message': 'User does not exit.'
+    })
     # TODO validate the password for the user
     # hint: compare password with the one stored inside the password file
     # passwords contains all users and passwords, you need to
