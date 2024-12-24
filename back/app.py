@@ -1,24 +1,24 @@
 from flask import Flask, render_template, jsonify, request
 import yaml
-#akaishuichi#
+##
+
+QUIZ_FILE = 'quiz.yaml'
+PASS_FILE = 'passwd.yaml'
+HIST_FILE = 'hist.yaml'
 
 def load_questions(filename):
     with open(filename, 'r') as file:
         questions = yaml.safe_load(file)
     return questions
 
+def load_passwords(filename):
+    with open(filename, 'r') as file:
+        passwords = yaml.safe_load(file)
+    return passwords
 
-app = Flask(__name__)
-@app.route('/')
-def home():
-    return render_template("Home.html")
-
-
-@app.route('/test')
-def test():# 添加測試問題數據
-    questions = load_questions('quiz.yaml')
-    return render_template("Quiz.html", questions=questions)
-
+def save_passwords(filename, passwords):
+    with open(filename, 'w') as file:
+        yaml.dump(passwords, file, default_flow_style=False)
 
 def calculate(choices):
     total_questions = len(choices)
@@ -30,6 +30,21 @@ def calculate(choices):
             choice_count[choice] = 1
     percentages = {choice: (count / total_questions) * 100 for choice, count in choice_count.items()}
     return jsonify(percentages)
+
+
+app = Flask(__name__)
+
+passwords=load_passwords(PASS_FILE)
+
+@app.route('/')
+def home():
+    return render_template("Home.html")
+
+
+@app.route('/test')
+def test():# 添加測試問題數據
+    questions = load_questions(QUIZ_FILE)
+    return render_template("Quiz.html", questions=questions)
 
 
 @app.route('/submit', methods=['POST'])
@@ -53,6 +68,8 @@ def signup_post():
 
     if pass1 == pass2:
         # TODO write user name and password into a password file
+        passwords.append({'name':username, 'pass': pass1})
+        save_passwords(PASS_FILE, passwords)
         return render_template("home.html", username=username)
     else:
         return jsonify(
@@ -70,7 +87,10 @@ def login_post():
     print(f"{username}--------{password}")
     # TODO validate the password for the user
     # hint: compare password with the one stored inside the password file
-
+    # passwords contains all users and passwords, you need to
+    # loop/traverse遍历 the passwords to find the name matched with 
+    # the variable 'username', then compare 'pass' in the dict 
+    # and the variable 'password'
 
     # TODO decide the page being redirected to
     return jsonify({'message': 'submited ok'})
