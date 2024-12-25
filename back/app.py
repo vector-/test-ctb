@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, session
 import yaml
 ##
 
@@ -36,9 +36,48 @@ app = Flask(__name__)
 
 passwords=load_passwords(PASS_FILE)
 
+team_members = [
+    {
+        "name": "Suzie Jing",
+        "title": "Team Leader",
+        "image": "///"
+    },
+    {
+        "name": "Evelyn Zhang",
+        "title": "Web front-end developer",
+        "image": "///"
+    },
+    {
+        "name": "Peter Sun",
+        "title": "Web back-end developer",
+        "image": "///"
+    },
+    {
+        "name": "Joanna Yang",
+        "title": "Problem Designer",
+        "image": "///"
+    },
+    {
+        "name": "Sophia Sun",
+        "title": "Data integrator",
+        "image": "lisa.jpg"
+    },
+    {
+        "name": "Seven Shao",
+        "title": "Data Analyst",
+        "image": "///"
+    },
+    {
+        "name": "Zhou",
+        "title": "Context Writer",
+        "image": "///"
+    }
+]
+
 @app.route('/')
 def home():
-    return render_template("Home.html")
+    username = session.get('username')
+    return render_template('home.html', username=username, team_members=team_members)
 
 
 @app.route('/test')

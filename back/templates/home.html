@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Emotional Eating Habits</title>
+        <title>Home | Emotional Eating</title>
         <style>
         body {
             background-color: #f6f4d6;
@@ -200,6 +200,70 @@
             float: right;
             margin-right: 20px;
         }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+        }
+
+        .member-icon {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .avatar-circle {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #826666;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .avatar-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .decoration {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #9bc1ec;
+            z-index: 1;
+        }
+
+        .decoration-1 { top: -5px; left: -5px; }
+        .decoration-2 { top: -5px; right: -5px; }
+
+        .member-name {
+            text-align: center;
+            color: #826666;
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .member-title {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            margin-top: 5px;
+        }
         </style> 
     </head>
     <body>
@@ -242,7 +306,6 @@
         <br/>
         <br/>
         <br/>
-        <br/>
         <br/>      
         <br/>
         <br/>
@@ -258,6 +321,7 @@
         <br/>
         <br/>
         <br/>      
+        <br/>
         <br/>
         <br/>
         <br/>
@@ -282,5 +346,45 @@
                 </form>
             </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>      
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>      
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h3 style="text-align: center; color: #826666;">Meet Our Team</h3>
+        <div class="team-container">
+            {% for member in team_members %}
+            <div class="team-member">
+                <div class="member-icon">
+                    <div class="decoration decoration-1"></div>
+                    <div class="decoration decoration-2"></div>
+                    <div class="avatar-circle">
+                        <!-- 如果有图片就显示图片，没有就留空 -->
+                        {% if member.image %}
+                        <img src="{{ url_for('static', filename='images/' + member.image) }}" alt="{{ member.name }}">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="member-name">{{ member.name }}</div>
+                <div class="member-title">{{ member.title }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        
     </body>
 </html>

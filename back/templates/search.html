@@ -1,64 +1,65 @@
-<div class="search-container">
-    <!-- 搜索表单 -->
-    <form class="search-form" action="/search" method="GET">
-        <div class="search-box">
-            <!-- 搜索输入框 -->
-            <input type="text" 
-                   class="search-input" 
-                   name="q" 
-                   placeholder="请输入搜索内容..."
-                   required>
-            
-            <!-- 搜索按钮 -->
-            <button type="submit" class="search-button">
-                搜索
-            </button>
-        </div>
-    </form>
-</div>
+<html>
+    <head>
+        <title>Searching | Emotional eating</title>
+    </head>
+    <div class="search-container">
+        <form class="search-form" action="/search" method="GET">
+            <div class="search-box">
+                <input type="text" 
+                    class="search-input" 
+                    name="q" 
+                    placeholder="请输入搜索内容..."
+                    required>
+                <button type="submit" class="search-button">
+                    搜索
+                </button>
+            </div>
+        </form>
+    </div>
 
-<style>
-    body{
-        background-color: #f7ecc5;
+    <style>
+        body{
+            background-color: #f7ecc5;
 
-    }
-    .search-container {
-        width: 100%;
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 0 15px;
-    }
+        }
+        .search-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
 
-    .search-box {
-        display: flex;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 25px;
-        overflow: hidden;
-    }
+        .search-box {
+            display: flex;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            overflow: hidden;
+        }
 
-    .search-input {
-        flex: 1;
-        padding: 12px 20px;
-        border: 1px solid #f7ecc5;
-        background-color: rgb(246, 243, 158);
-        border-right: none;
-        border-radius: 25px 0 0 25px;
-        font-size: 16px;
-        outline: none;
-    }
+        .search-input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 1px solid #f7ecc5;
+            background-color: rgb(246, 243, 158);
+            border-right: none;
+            border-radius: 25px 0 0 25px;
+            font-size: 16px;
+            outline: none;
+        }
 
-    .search-button {
-        padding: 12px 25px;
-        background: #37beec;
-        color: rgb(255, 255, 254);
-        border: none;
-        border-radius: 0 25px 25px 0;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background 0.3s;
-    }
+        .search-button {
+            padding: 12px 25px;
+            background: #37beec;
+            color: rgb(255, 255, 254);
+            border: none;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
 
-    .search-button:hover {
-        background: #4278e6;
-    }
-</style>
+        .search-button:hover {
+            background: #4278e6;
+        }
+    </style>
+</html>
