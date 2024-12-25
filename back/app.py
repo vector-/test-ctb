@@ -33,6 +33,7 @@ def calculate(choices):
 
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key_here'
 
 passwords=load_passwords(PASS_FILE)
 
@@ -106,16 +107,15 @@ def signup_post():
     pass2 = request.form.get('checking_password')
 
     if pass1 == pass2:
-        # TODO write user name and password into a password file
         passwords.append({'name':username, 'pass': pass1})
         save_passwords(PASS_FILE, passwords)
-        return render_template("home.html", username=username)
+        session['username'] = username
+        return render_template("home.html", username=username, team_members=team_members)
     else:
-        return jsonify(
-            {
-                'code': -1,
-                'message': 'Error: Two passwords are not same.'
-            })
+        return jsonify({
+            'code': -1,
+            'message': 'Error: Two passwords are not same.'
+        })
 
 
 # route for login
@@ -124,7 +124,14 @@ def login_post():
     username = request.form.get('username')
     password = request.form.get('password')
     print(f"{username}--------{password}")
-    # TODO validate the password for the user
+
+    for user in passwords:
+        if user['name'] == username and user['pass'] == password:
+            session['username'] = username  # 添加这行：登录成功后存储用户名到session
+            return jsonify({'success': True, 'message': 'Login successful'})
+    
+    return jsonify({'success': False, 'message': 'Invalid username or password'})
+  # TODO validate the password for the user
     # hint: compare password with the one stored inside the password file
     # passwords contains all users and passwords, you need to
     # loop/traverse遍历 the passwords to find the name matched with 
@@ -133,6 +140,5 @@ def login_post():
 
     # TODO decide the page being redirected to
     return jsonify({'message': 'submited ok'})
-
 if __name__ == '__main__':
     app.run(debug=True, port = 8888)
