@@ -109,6 +109,8 @@
         {% endif %}
         
         {% if signup %}
+        <! TODO: stay in the same page while error occurs 
+           redirect to the home.html when data is correct.-->
         <form action="/signup" method="POST">
         {% else %}
         <form action="/login_submit" method="POST">

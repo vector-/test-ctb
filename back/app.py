@@ -97,7 +97,6 @@ def login():
 
 
 # route for signup
-# TODO define a route handler for signup
 @app.route('/signup', methods=['POST'])
 def signup_post():
     username = request.form.get('username')
