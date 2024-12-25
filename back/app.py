@@ -33,8 +33,6 @@ def calculate(choices):
 
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'
-
 passwords=load_passwords(PASS_FILE)
 
 team_members = [
@@ -109,13 +107,13 @@ def signup_post():
     if pass1 == pass2:
         passwords.append({'name':username, 'pass': pass1})
         save_passwords(PASS_FILE, passwords)
-        session['username'] = username
-        return render_template("home.html", username=username, team_members=team_members)
+        return render_template("home.html", username=username)
     else:
-        return jsonify({
-            'code': -1,
-            'message': 'Error: Two passwords are not same.'
-        })
+        return jsonify(
+            {
+                'code': -1,
+                'message': 'Error: Two passwords are not same.'
+            })
 
 
 # route for login
@@ -124,14 +122,21 @@ def login_post():
     username = request.form.get('username')
     password = request.form.get('password')
     print(f"{username}--------{password}")
-
     for user in passwords:
-        if user['name'] == username and user['pass'] == password:
-            session['username'] = username  # 添加这行：登录成功后存储用户名到session
-            return jsonify({'success': True, 'message': 'Login successful'})
-    
-    return jsonify({'success': False, 'message': 'Invalid username or password'})
-  # TODO validate the password for the user
+        if user['name'] == username:
+            if user['pass'] == password:
+                return render_template("home.html", username=username)
+            else:
+                return jsonify({
+                    'code': -1,
+                    'message': 'Wrong password.'
+                })
+
+    return jsonify({
+        'code': -1,
+        'message': 'User does not exit.'
+    })
+    # TODO validate the password for the user
     # hint: compare password with the one stored inside the password file
     # passwords contains all users and passwords, you need to
     # loop/traverse遍历 the passwords to find the name matched with 

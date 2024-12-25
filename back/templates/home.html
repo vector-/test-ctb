@@ -41,16 +41,15 @@
         }
 
         .button1 {
-            display: block;
-            margin: 2px auto;
+            display: inline-block;
+            margin: 2px 5px;
             font-size: 16px;
             padding: 8px 20px;
             border-radius: 20px;
             border: none;
-            background-color: rgba(255, 255, 255, 0.9);
-            color: #333;
+            background-color: rgb(222, 238, 255);
+            color: rgb(0, 0, 0);
             cursor: pointer;
-            transition: all 0.2s ease;
         }
 
         .button1:hover {
@@ -199,6 +198,8 @@
         li:last-child {
             float: right;
             margin-right: 20px;
+            display: flex;
+            align-items: center;
         }
         .team-container {
             display: flex;
@@ -285,7 +286,10 @@
             {% if username %}
             <li>Welcome {{ username }}</li>
             {% else %}
-            <li><button class="button1" onclick="window.location.href='/login'">Sign up!</button></li>
+            <li>
+            <button class="button1" onclick="window.location.href='/login'">Sign in</button>
+            <button class="button1" onclick="window.location.href='/login?signup=true'">Sign up</button>
+            </li>
             {% endif %}
         </ul>
         <br/>
