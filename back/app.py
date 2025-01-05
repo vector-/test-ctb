@@ -31,8 +31,6 @@ def calculate(choices):
     percentages = {choice: (count / total_questions) * 100 for choice, count in choice_count.items()}
     return jsonify(percentages)
 
-# test checkin
-
 
 app = Flask(__name__)
 passwords=load_passwords(PASS_FILE)
