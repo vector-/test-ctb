@@ -257,6 +257,45 @@ suo
             margin-right: auto;
         }
 
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .nav-btn, .submit-btn {
+            padding: 15px 40px;
+            background-color: #9bc1ec;
+            border: none;
+            border-radius: 25px;
+            color: #333;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .nav-btn:hover, .submit-btn:hover {
+            background-color: #86b3e7;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .button-spacer {
+            width: 200px;
+            visibility: hidden;
+        }
+
+        .question-page {
+            transition: opacity 0.3s ease;
+        }
+
         </style> 
     </head>
     <body>
@@ -280,28 +319,39 @@ suo
         <br/>
         <p>Please answer the following questions by your heart, so we can give you an accurate feedback and efficient therapy.</p>
         <br>
-        <div class="p1">PART  I</div>
+        <div class="p1">PART <span id="currentPart">1</span></div>
         <br/>
         <hr>
-        {% for quiz in questions %}
-            <div class="question-group">
-                <input type="checkbox" id="question{{quiz.number}}" class="question-checkbox">
-                <label for="question{{quiz.number}}" class="question-label">
-                    <p class="question-text">{{quiz.number}}. {{quiz.question}}</p>
-                    <div class="option-container">
-                        <div class="option" data-text="overjoyed" tabindex="0"></div>
-                        <div class="option" data-text="gratified" tabindex="0"></div>
-                        <div class="option" data-text="satisfied" tabindex="0"></div>
-                        <div class="option" data-text="neutral" tabindex="0"></div>
-                        <div class="option" data-text="disgruntled" tabindex="0"></div>
-                        <div class="option" data-text="discontented" tabindex="0"></div>
-                        <div class="option" data-text="seething" tabindex="0"></div>
+        <div id="questions-container">
+            {% for quiz in questions %}
+                <div class="question-page" data-page="{{ ((quiz.number - 1) // 10) + 1 }}" style="display: none;">
+                    <div class="question-group">
+                        <input type="checkbox" id="question{{quiz.number}}" class="question-checkbox">
+                        <label for="question{{quiz.number}}" class="question-label">
+                            <p class="question-text">{{quiz.number}}. {{quiz.question}}</p>
+                            <div class="option-container">
+                                <div class="option" data-text="overjoyed" tabindex="0"></div>
+                                <div class="option" data-text="gratified" tabindex="0"></div>
+                                <div class="option" data-text="satisfied" tabindex="0"></div>
+                                <div class="option" data-text="neutral" tabindex="0"></div>
+                                <div class="option" data-text="disgruntled" tabindex="0"></div>
+                                <div class="option" data-text="discontented" tabindex="0"></div>
+                                <div class="option" data-text="seething" tabindex="0"></div>
+                            </div>
+                        </label>
+                        <hr>
                     </div>
-                </label>
-                <hr>
-            </div>
-        {% endfor %}
-        <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="navigation-buttons">
+            <button type="button" class="nav-btn" id="prevBtn" onclick="changePage(-1)" style="display: none;">Previous Part</button>
+            <div class="button-spacer" id="spacer"></div>
+            <button type="button" class="nav-btn" id="nextBtn" onclick="changePage(1)">Next Part</button>
+            <button type="button" class="submit-btn" id="submitBtn" style="display: none;" onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+
         <!-- 添加結果顯示區域 -->
         <div id="resultContainer" class="result-container">
             <h2 style="text-align: center; color: #826666;">Quiz Results</h2>
@@ -365,8 +415,8 @@ suo
                     });
                 });
                 document.querySelectorAll('.option').forEach(option => {
-                option.addEventListener('click', function() {
-                    // 移除同一組中其他選項的選中狀態
+                option.addEventListener('click', function(e) {
+                    e.stopPropagation(); 
                     const container = this.closest('.option-container');
                     container.querySelectorAll('.option').forEach(opt => {
                         opt.classList.remove('selected');
@@ -428,6 +478,75 @@ suo
                     alert('Submission failed. Please try again later.');
                 });
                 }
+
+            let currentPage = 1;
+            const questionsPerPage = 10;
+            const totalPages = Math.ceil({{ questions|length }} / questionsPerPage);
+
+            function showPage(pageNum) {
+                document.querySelectorAll('.question-page').forEach(page => {
+                    page.style.display = 'none';
+                });
+                
+                document.querySelectorAll(`.question-page[data-page="${pageNum}"]`).forEach(page => {
+                    page.style.display = 'block';
+                });
+                
+                // 更新Part显示
+                document.getElementById('currentPart').textContent = pageNum;
+                
+                // 更新按钮显示
+                const prevBtn = document.getElementById('prevBtn');
+                const nextBtn = document.getElementById('nextBtn');
+                const submitBtn = document.getElementById('submitBtn');
+                const spacer = document.getElementById('spacer');
+                
+                prevBtn.style.display = pageNum > 1 ? 'block' : 'none';
+                spacer.style.display = pageNum > 1 ? 'none' : 'block';
+                
+                if (pageNum === totalPages) {
+                    nextBtn.style.display = 'none';
+                    submitBtn.style.display = 'block';
+                } else {
+                    nextBtn.style.display = 'block';
+                    submitBtn.style.display = 'none';
+                }
+            }
+
+            function checkCurrentPageAnswers() {
+                const currentQuestions = document.querySelectorAll(`.question-page[data-page="${currentPage}"] .option-container`);
+                let allAnswered = true;
+                
+                for (const container of currentQuestions) {
+                    const checkbox = container.closest('.question-group').querySelector('.question-checkbox');
+                    if (checkbox && checkbox.checked) {
+                        continue;
+                    }
+                    if (!container.querySelector('.option.selected')) {
+                        allAnswered = false;
+                        break;
+                    }
+                }
+                
+                return allAnswered;
+            }
+
+            function changePage(delta) {
+                if (delta > 0) {
+                    if (!checkCurrentPageAnswers()) {
+                        alert('Please answer all questions in the current part before proceeding.');
+                        return;
+                    }
+                }
+                
+                currentPage += delta;
+                if (currentPage < 1) currentPage = 1;
+                if (currentPage > totalPages) currentPage = totalPages;
+                showPage(currentPage);
+            }
+            document.addEventListener('DOMContentLoaded', () => {
+                showPage(1);
+            });
         </script>
     </body>
 </html>
