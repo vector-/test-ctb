@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify, request, session
 import yaml
+import random
 ##
 
 QUIZ_FILE = 'quiz.yaml'
@@ -8,8 +9,13 @@ HIST_FILE = 'hist.yaml'
 
 def load_questions(filename):
     with open(filename, 'r') as file:
-        questions = yaml.safe_load(file)
-    return questions
+        all_questions = yaml.safe_load(file)
+        # 随机选择30个问题
+        selected_questions = random.sample(all_questions, 30)
+        # 重新编号选中的问题
+        for i, question in enumerate(selected_questions, 1):
+            question['number'] = i
+    return selected_questions
 
 def load_passwords(filename):
     with open(filename, 'r') as file:
