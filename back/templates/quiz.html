@@ -296,6 +296,18 @@ suo
             transition: opacity 0.3s ease;
         }
 
+        .parts-left {
+            text-align: right;
+            color: #826666;
+            font-style: italic;
+            margin-right: 20px;
+            margin-top: -20px;
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         </style> 
     </head>
     <body>
@@ -344,6 +356,8 @@ suo
                 </div>
             {% endfor %}
         </div>
+
+        <div id="parts-left" class="parts-left"></div>
 
         <div class="navigation-buttons">
             <button type="button" class="nav-btn" id="prevBtn" onclick="changePage(-1)" style="display: none;">Previous Part</button>
@@ -510,6 +524,16 @@ suo
                 } else {
                     nextBtn.style.display = 'block';
                     submitBtn.style.display = 'none';
+                }
+
+                // 添加剩余部分提示
+                const partsLeftDiv = document.getElementById('parts-left');
+                if (pageNum === 1) {
+                    partsLeftDiv.textContent = "2 parts left";
+                } else if (pageNum === 2) {
+                    partsLeftDiv.textContent = "Only 1 part left!";
+                } else {
+                    partsLeftDiv.textContent = "";
                 }
             }
 
