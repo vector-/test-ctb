@@ -1,8 +1,6 @@
-from flask import Flask, render_template, jsonify, request, session
+from flask import Flask, render_template, jsonify, request, session, redirect, url_for
 import yaml
 import random
-##
-
 QUIZ_FILE = 'quiz.yaml'
 PASS_FILE = 'passwd.yaml'
 HIST_FILE = 'hist.yaml'
@@ -10,9 +8,9 @@ HIST_FILE = 'hist.yaml'
 def load_questions(filename):
     with open(filename, 'r') as file:
         all_questions = yaml.safe_load(file)
-        # 随机选择30个问题
+        # 隨機選擇30個問題
         selected_questions = random.sample(all_questions, 30)
-        # 重新编号选中的问题
+        # 重新編號選中的問題
         for i, question in enumerate(selected_questions, 1):
             question['number'] = i
     return selected_questions
@@ -130,25 +128,17 @@ def login_post():
     for user in passwords:
         if user['name'] == username:
             if user['pass'] == password:
-                return render_template("home.html", username=username)
+                session['username'] = username
+                return redirect(url_for('home'))
             else:
-                return jsonify({
-                    'code': -1,
-                    'message': 'Wrong password.'
-                })
-
-    return jsonify({
-        'code': -1,
-        'message': 'User does not exit.'
-    })
+                return render_template("login.html", error = "Wrong password")
+    return render_template("login.html", error = "User does not exist")
     # TODO validate the password for the user
     # hint: compare password with the one stored inside the password file
     # passwords contains all users and passwords, you need to
     # loop/traverse遍历 the passwords to find the name matched with 
     # the variable 'username', then compare 'pass' in the dict 
     # and the variable 'password'
-
     # TODO decide the page being redirected to
-    return jsonify({'message': 'submited ok'})
 if __name__ == '__main__':
     app.run(debug=True, port = 8888)

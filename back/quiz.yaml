@@ -1,319 +1,319 @@
 - question: "When you feel stressed, do you tend to eat more than usual?"
-  weight: 20
+  weight: 3.33
   number: 1
 
 - question: "Do you eat when you are not physically hungry?"
-  weight: 20
+  weight: 3.33
   number: 2
 
 - question: "Do you feel guilty after emotional eating?"
-  weight: 20
+  weight: 3.33
   number: 3
 
 - question: "Do you turn to food when you feel lonely or bored?"
-  weight: 20
+  weight: 3.33
   number: 4
 
 - question: "Do you use food as a way to cope with negative emotions?"
-  weight: 20
+  weight: 3.33
   number: 5
 
 - question: "When you are in a bad mood, do you find yourself eating more?"
-  weight: 20
+  weight: 3.33
   number: 6
 
 - question: "Do you often eat without thinking when you are nervous?"
-  weight: 20
+  weight: 3.33
   number: 7
 
 - question: "Do you have the habit of eating when you are anxious about something?"
-  weight: 20
+  weight: 3.33
   number: 8
 
 - question: "Do you tend to eat more when you are frustrated?"
-  weight: 20
+  weight: 3.33
   number: 9
 
 - question: "Do you eat more than usual when you are feeling overwhelmed?"
-  weight: 20
+  weight: 3.33
   number: 10
 
 - question: "Do you snack frequently even when you don't have a real appetite?"
-  weight: 20
+  weight: 3.33
   number: 11
 
 - question: "Do you use food to deal with feelings of sadness?"
-  weight: 20
+  weight: 3.33
   number: 12
 
 - question: "Do you eat more when you are feeling lonely at night?"
-  weight: 20
+  weight: 3.33
   number: 13
 
 - question: "Do you find that you eat more when you are under pressure?"
-  weight: 20
+  weight: 3.33
   number: 14
 
 - question: "Do you eat more than normal when you are worried about the future?"
-  weight: 20
+  weight: 3.33
   number: 15
 
 - question: "Do you have the tendency to eat when you are feeling restless?"
-  weight: 20
+  weight: 3.33
   number: 16
 
 - question: "Do you eat more when you are feeling disappointed?"
-  weight: 20
+  weight: 3.33
   number: 17
 
 - question: "Do you use food as a comfort when you are feeling down?"
-  weight: 20
+  weight: 3.33
   number: 18
 
 - question: "Do you eat more when you are feeling stressed out about work?"
-  weight: 20
+  weight: 3.33
   number: 19
 
 - question: "Do you find yourself eating more when you are feeling isolated?"
-  weight: 20
+  weight: 3.33
   number: 20
 
 - question: "Do you eat more when you are feeling tense before an important event?"
-  weight: 20
+  weight: 3.33
   number: 21
 
 - question: "Do you use food to cope with feelings of emptiness?"
-  weight: 20
+  weight: 3.33
   number: 22
 
 - question: "Do you eat more when you are feeling anxious about a relationship?"
-  weight: 20
+  weight: 3.33
   number: 23
 
 - question: "Do you snack more when you are feeling bored during the day?"
-  weight: 20
+  weight: 3.33
   number: 24
 
 - question: "Do you eat more when you are feeling stressed about finances?"
-  weight: 20
+  weight: 3.33
   number: 25
 
 - question: "Do you use food to deal with feelings of frustration at home?"
-  weight: 20
+  weight: 3.33
   number: 26
 
 - question: "Do you eat more when you are feeling nervous about a presentation?"
-  weight: 20
+  weight: 3.33
   number: 27
 
 - question: "Do you find that you eat more when you are feeling lonely on weekends?"
-  weight: 20
+  weight: 3.33
   number: 28
 
 - question: "Do you eat more when you are feeling overwhelmed by daily tasks?"
-  weight: 20
+  weight: 3.33
   number: 29
 
 - question: "Do you have the habit of eating when you are feeling anxious about your health?"
-  weight: 20
+  weight: 3.33
   number: 30
 
 - question: "Do you snack more when you are feeling bored at work?"
-  weight: 20
+  weight: 3.33
   number: 31
 
 - question: "Do you eat more when you are feeling stressed about a deadline?"
-  weight: 20
+  weight: 3.33
   number: 32
 
 - question: "Do you use food to cope with feelings of sadness after a loss?"
-  weight: 20
+  weight: 3.33
   number: 33
 
 - question: "Do you eat more when you are feeling lonely in a new place?"
-  weight: 20
+  weight: 3.33
   number: 34
 
 - question: "Do you find that you eat more when you are feeling tense during a meeting?"
-  weight: 20
+  weight: 3.33
   number: 35
 
 - question: "Do you eat more when you are feeling anxious about an exam?"
-  weight: 20
+  weight: 3.33
   number: 36
 
 - question: "Do you snack more when you are feeling bored at home?"
-  weight: 20
+  weight: 3.33
   number: 37
 
 - question: "Do you eat more when you are feeling stressed about family issues?"
-  weight: 20
+  weight: 3.33
   number: 38
 
 - question: "Do you use food to deal with feelings of disappointment in yourself?"
-  weight: 20
+  weight: 3.33
   number: 39
 
 - question: "Do you eat more when you are feeling lonely after a breakup?"
-  weight: 20
+  weight: 3.33
   number: 40
 
 - question: "Do you find that you eat more when you are feeling tense before a job interview?"
-  weight: 20
+  weight: 3.33
   number: 41
 
 - question: "Do you eat more when you are feeling anxious about a social event?"
-  weight: 20
+  weight: 3.33
   number: 42
 
 - question: "Do you snack more when you are feeling bored during a long trip?"
-  weight: 20
+  weight: 3.33
   number: 43
 
 - question: "Do you eat more when you are feeling stressed about a project?"
-  weight: 20
+  weight: 3.33
   number: 44
 
 - question: "Do you use food to cope with feelings of sadness from a movie?"
-  weight: 20
+  weight: 3.33
   number: 45
 
 - question: "Do you eat more when you are feeling lonely in a crowd?"
-  weight: 20
+  weight: 3.33
   number: 46
 
 - question: "Do you find that you eat more when you are feeling tense while driving?"
-  weight: 20
+  weight: 3.33
   number: 47
 
 - question: "Do you eat more when you are feeling anxious about a decision?"
-  weight: 20
+  weight: 3.33
   number: 48
 
 - question: "Do you snack more when you are feeling bored in a waiting room?"
-  weight: 20
+  weight: 3.33
   number: 49
 
 - question: "Do you eat more when you are feeling stressed about a performance?"
-  weight: 20
+  weight: 3.33
   number: 50
 
 - question: "Do you use food to deal with feelings of frustration with a friend?"
-  weight: 20
+  weight: 3.33
   number: 51
 
 - question: "Do you eat more when you are feeling lonely on a holiday?"
-  weight: 20
+  weight: 3.33
   number: 52
 
 - question: "Do you find that you eat more when you are feeling tense during a competition?"
-  weight: 20
+  weight: 3.33
   number: 53
 
 - question: "Do you eat more when you are feeling anxious about a medical test?"
-  weight: 20
+  weight: 3.33
   number: 54
 
 - question: "Do you snack more when you are feeling bored in a library?"
-  weight: 20
+  weight: 3.33
   number: 55
 
 - question: "Do you eat more when you are feeling stressed about a move?"
-  weight: 20
+  weight: 3.33
   number: 56
 
 - question: "Do you use food to cope with feelings of sadness from a memory?"
-  weight: 20
+  weight: 3.33
   number: 57
 
 - question: "Do you eat more when you are feeling lonely in a new job?"
-  weight: 20
+  weight: 3.33
   number: 58
 
 - question: "Do you find that you eat more when you are feeling tense before a public speech?"
-  weight: 20
+  weight: 3.33
   number: 59
 
 - question: "Do you eat more when you are feeling anxious about a financial decision?"
-  weight: 20
+  weight: 3.33
   number: 60
 
 - question: "Do you snack more when you are feeling bored in a classroom?"
-  weight: 20
+  weight: 3.33
   number: 61
 
 - question: "Do you eat more when you are feeling stressed about a wedding?"
-  weight: 20
+  weight: 3.33
   number: 62
 
 - question: "Do you use food to deal with feelings of disappointment in a relationship?"
-  weight: 20
+  weight: 3.33
   number: 63
 
 - question: "Do you eat more when you are feeling lonely after a party?"
-  weight: 20
+  weight: 3.33
   number: 64
 
 - question: "Do you find that you eat more when you are feeling tense during a negotiation?"
-  weight: 20
+  weight: 3.33
   number: 65
 
 - question: "Do you eat more when you are feeling anxious about a travel plan?"
-  weight: 20
+  weight: 3.33
   number: 66
 
 - question: "Do you snack more when you are feeling bored in a queue?"
-  weight: 20
+  weight: 3.33
   number: 67
 
 - question: "Do you eat more when you are feeling stressed about a renovation?"
-  weight: 20
+  weight: 3.33
   number: 68
 
 - question: "Do you use food to cope with feelings of sadness from a book?"
-  weight: 20
+  weight: 3.33
   number: 69
 
 - question: "Do you eat more when you are feeling lonely in a foreign country?"
-  weight: 20
+  weight: 3.33
   number: 70
 
 - question: "Do you find that you eat more when you are feeling tense before a sports game?"
-  weight: 20
+  weight: 3.33
   number: 71
 
 - question: "Do you eat more when you are feeling anxious about a career change?"
-  weight: 20
+  weight: 3.33
   number: 72
 
 - question: "Do you snack more when you are feeling bored in a museum?"
-  weight: 20
+  weight: 3.33
   number: 73
 
 - question: "Do you eat more when you are feeling stressed about a family gathering?"
-  weight: 20
+  weight: 3.33
   number: 74
 
 - question: "Do you use food to deal with feelings of frustration with a colleague?"
-  weight: 20
+  weight: 3.33
   number: 75
 
 - question: "Do you eat more when you are feeling lonely on a business trip?"
-  weight: 20
+  weight: 3.33
   number: 76
 
 - question: "Do you find that you eat more when you are feeling tense during a presentation at work?"
-  weight: 20
+  weight: 3.33
   number: 77
 
 - question: "Do you eat more when you are feeling anxious about a health check-up?"
-  weight: 20
+  weight: 3.33
   number: 78
 
 - question: "Do you snack more when you are feeling bored in a park?"
-  weight: 20
+  weight: 3.33
   number: 79
 
 - question: "Do you eat more when you are feeling stressed about a birthday party?"
-  weight: 20
+  weight: 3.33
   number: 80
