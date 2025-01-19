@@ -98,13 +98,38 @@
         .back-link:hover {
             color: #333;
         }
+
+        .language-btn {
+            padding: 8px 16px;
+            border: 2px solid #9bc1ec;
+            border-radius: 20px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+        }
+
+        .language-btn:hover {
+            background-color: #9bc1ec;
+            color: white;
+        }
+
+        .lang-text {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    <div style="position: absolute; top: 20px; right: 20px;">
+        <button id="languageToggle" class="language-btn">
+            <span class="lang-text">EN</span> / <span class="lang-text">中文</span>
+        </button>
+    </div>
     <div class="login-container">
-        {% if not signup %}
-        <h2>Welcome Back</h2>
-        {% else %}
+        <h2 class="translate" data-en="Welcome Back" data-zh="欢迎回来">Welcome Back</h2>
+        
+        {% if signup %}
         <h2 style="text-align: center;">User Signup</h2>
         {% endif %}
         
@@ -116,12 +141,14 @@
         <form action="/login_submit" method="POST">
         {% endif %}
             <div class="form-group">
-                <label for="username">Username <span class="emoji">👤</span></label>
+                <label for="username" class="translate" data-en="Username" data-zh="用户名">Username</label>
+                <span class="emoji">👤</span>
                 <input type="text" id="username" name="username" required>
             </div>
             
             <div class="form-group">
-                <label for="password">Password <span class="emoji">🔒</span></label>
+                <label for="password" class="translate" data-en="Password" data-zh="密码">Password</label>
+                <span class="emoji">🔒</span>
                 <input type="password" id="password" name="password" required>
                 
                 {% if signup %}
@@ -130,7 +157,7 @@
                 {% endif %}
             </div>
             
-            <button type="submit">
+            <button type="submit" class="translate" data-en="Sign In" data-zh="登录">
                 {% if not signup %}
                 Sign In
                 {% else %}
@@ -141,5 +168,24 @@
         
         <a href="/" class="back-link">← Back to Home</a>
     </div>
+
+    <script>
+    let currentLang = 'en';
+
+    document.getElementById('languageToggle').addEventListener('click', function() {
+        currentLang = currentLang === 'en' ? 'zh' : 'en';
+        
+        const elements = document.getElementsByClassName('translate');
+        for (let element of elements) {
+            const newText = element.getAttribute(`data-${currentLang}`);
+            if (newText) {
+                element.textContent = newText;
+            }
+        }
+        
+        // Update page title
+        document.title = currentLang === 'en' ? 'Login | Emotional Eating' : '登录 | 情绪性饮食';
+    });
+    </script>
 </body>
 </html>

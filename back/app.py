@@ -84,9 +84,14 @@ def home():
 
 
 @app.route('/test')
-def test():# 添加測試問題數據
+def test():
     questions = load_questions(QUIZ_FILE)
-    return render_template("Quiz.html", questions=questions)
+    # 添加问题的中英文版本
+    for question in questions:
+        if 'question_zh' not in question:
+            # 如果 YAML 文件中没有中文翻译，可以先使用英文
+            question['question_zh'] = question['question']
+    return render_template("quiz.html", questions=questions)
 
 
 @app.route('/submit', methods=['POST'])

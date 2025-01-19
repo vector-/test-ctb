@@ -312,17 +312,37 @@
             margin-top: 10px;
             font-style: italic;
         }
+
+        .language-btn {
+            padding: 8px 16px;
+            border: 2px solid #9bc1ec;
+            border-radius: 20px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+        }
+
+        .language-btn:hover {
+            background-color: #9bc1ec;
+            color: white;
+        }
+
+        .lang-text {
+            font-weight: bold;
+        }
         </style> 
     </head>
     <body>
         <ul>
-            <li><a href="#home">Emotional Eating</a></li>
-            <li><a href="#news">---Test---</a></li>
+            <li><a href="#home" class="translate" data-en="Emotional Eating" data-zh="情绪性饮食">Emotional Eating</a></li>
+            <li><a href="#news" class="translate" data-en="Test" data-zh="测试">Test</a></li>
             <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Types ⌄</a>
+              <a href="javascript:void(0)" class="dropbtn translate" data-en="Types ⌄" data-zh="类型 ⌄">Types ⌄</a>
               <div class="dropdown-content">
-                <a href="#">· Boredom and emptiness type emotional eating</a>
-                <a href="#">· Anxiety type emotional eating</a>
+                <a href="#" class="translate" data-en="· Boredom and emptiness type emotional eating" data-zh="· 无聊和空虚型情绪性饮食">· Boredom and emptiness type emotional eating</a>
+                <a href="#" class="translate" data-en="· Anxiety type emotional eating" data-zh="· 焦虑型情绪性饮食">· Anxiety type emotional eating</a>
                 <a href="#">· Stress type emotional eating</a>
                 <a href="#">· Depression type emotional eating</a>
                 <a href="#">· Trauma type emotional eating</a>
@@ -331,32 +351,43 @@
               </div>
             </li>
             {% if username %}
-            <li>Welcome {{ username }}</li>
+            <li class="translate" data-en="Welcome" data-zh="欢迎">Welcome {{ username }}</li>
             {% else %}
             <li>
-            <button class="button1" onclick="window.location.href='/login'">Sign in</button>
+            <button class="button1 translate" data-en="Sign in" data-zh="登录" onclick="window.location.href='/login'">Sign in</button>
             </li>
             {% endif %}
+            <li style="float: right;">
+                <button id="languageToggle" class="language-btn">
+                    <span class="lang-text">EN</span> / <span class="lang-text">中文</span>
+                </button>
+            </li>
         </ul>
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
-        <h1>"When you understand your emotional triggers, <br/>you can break free from emotional eating."</h1>
-        <p>Welcome! Please click the button below to take our free test for your emotional eating habits.</p>
+        <h1 class="translate" 
+            data-en="When you understand your emotional triggers, you can break free from emotional eating." 
+            data-zh="当你了解自己的情绪触发因素时，你就能摆脱情绪性饮食。">
+            When you understand your emotional triggers, <br/>you can break free from emotional eating.
+        </h1>
+        <p class="translate" 
+           data-en="Welcome! Please click the button below to take our free test for your emotional eating habits." 
+           data-zh="欢迎！请点击下方按钮，参加我们的免费情绪性饮食习惯测试。">
+           Welcome! Please click the button below to take our free test for your emotional eating habits.
+        </p>
         <br/>
         <br/>
         <br/>
         <br/>
-        <button class="main-button" onclick="window.location.href='/test'">Take the Test</button>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>      
+        <button class="main-button translate" 
+                data-en="Take the Test" 
+                data-zh="开始测试" 
+                onclick="window.location.href='/test'">
+                Take the Test
+        </button>
         <br/>
         <br/>
         <br/>
@@ -380,33 +411,36 @@
         <br/>
         <br/>
         <div class="comparison-table">
-            <h2>How to tell the difference between true hunger and emotional eating?</h2>
+            <h2 class="translate" 
+                data-en="How to tell the difference between true hunger and emotional eating?" 
+                data-zh="如何区分真实饥饿和情绪性饮食？">
+            </h2>
             <table>
                 <tr class="header-row">
-                    <th>Physical hunger</th>
-                    <th>Emotional hunger</th>
+                    <th class="translate" data-en="Physical hunger" data-zh="生理性饥饿">Physical hunger</th>
+                    <th class="translate" data-en="Emotional hunger" data-zh="情绪性饥饿">Emotional hunger</th>
                 </tr>
                 <tr>
-                    <td>Not suddenly</td>
-                    <td>No reason, suddenly want to eat</td>
+                    <td class="translate" data-en="Not suddenly" data-zh="不会突然发生">Not suddenly</td>
+                    <td class="translate" data-en="No reason, suddenly want to eat" data-zh="无缘无故突然想吃东西">No reason, suddenly want to eat</td>
                 </tr>
                 <tr>
-                    <td>You don't just want to eat one or two foods</td>
-                    <td>You only want certain foods</td>
+                    <td class="translate" data-en="You don't just want to eat one or two foods" data-zh="你不会只想吃一两种食物">You don't just want to eat one or two foods</td>
+                    <td class="translate" data-en="You only want certain foods" data-zh="你只想要某些食物">You only want certain foods</td>
                 </tr>
                 <tr>
-                    <td>A sense of fullness can be detected</td>
-                    <td>Unable to detect feelings of fullness</td>
+                    <td class="translate" data-en="A sense of fullness can be detected" data-zh="可以感觉到饱腹感">A sense of fullness can be detected</td>
+                    <td class="translate" data-en="Unable to detect feelings of fullness" data-zh="无法感觉到饱腹感">Unable to detect feelings of fullness</td>
                 </tr>
                 <tr>
-                    <td>You don't feel guilty about eating</td>
-                    <td>Feeling regret and guilt after eating</td>
+                    <td class="translate" data-en="You don't feel guilty about eating" data-zh="你不会因为吃东西而感到内疚">You don't feel guilty about eating</td>
+                    <td class="translate" data-en="Feeling regret and guilt after eating" data-zh="吃东西后感到后悔和内疚">Feeling regret and guilt after eating</td>
                 </tr>
             </table>
             <p class="table-source">(4 physiological responses to identify true hunger. Source: Mayo Clinic.)</p>
         </div>
 
-        <h2>Have questions? Search here!</h2>
+        <h2 class="translate" data-en="Have questions? Search here!" data-zh="有问题？在这里搜索！">Have questions? Search here!</h2>
         <div class="search-section" style="margin-top: 60px;">
             <div class="search-container">
                 <form class="search-form" action="/search" method="GET">
@@ -415,8 +449,12 @@
                             class="search-input" 
                             name="q" 
                             placeholder="What would you like to know?"
+                            data-en-placeholder="What would you like to know?"
+                            data-zh-placeholder="您想了解什么？"
                             required>
-                        <button type="submit" class="search-button">
+                        <button type="submit" class="search-button translate" 
+                            data-en="Search" 
+                            data-zh="搜索">
                             Search
                         </button>
                     </div>
@@ -443,7 +481,9 @@
         <br/>
         <br/>
         <br/>
-        <h3 style="text-align: center; color: #826666;">Meet Our Team</h3>
+        <h3 style="text-align: center; color: #826666;" class="translate" 
+            data-en="Meet Our Team" 
+            data-zh="认识我们的团队">Meet Our Team</h3>
         <div class="team-container">
             {% for member in team_members %}
             <div class="team-member">
@@ -462,5 +502,24 @@
             </div>
             {% endfor %}
         </div>
+
+        <script>
+        let currentLang = 'en';
+
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            
+            const elements = document.getElementsByClassName('translate');
+            for (let element of elements) {
+                const newText = element.getAttribute(`data-${currentLang}`);
+                if (newText) {
+                    element.textContent = newText;
+                }
+            }
+            
+            // Update page title
+            document.title = currentLang === 'en' ? 'Home | Emotional Eating' : '主页 | 情绪性饮食';
+        });
+        </script>
     </body>
 </html>
