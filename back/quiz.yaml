@@ -1,319 +1,1441 @@
+types:['Boredom and emptiness type emotional eating', 'Anxiety type emotional eating', 'Stress type emotional eating', 'Depression type emotional eating', 'Trauma type emotional eating', 'Grief type emotional eating', 'Bulimia type eating']
+
 - question: "When you feel stressed, do you tend to eat more than usual?"
   weight: 3.33
   number: 1
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat when you are not physically hungry?"
   weight: 3.33
   number: 2
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you feel guilty after emotional eating?"
   weight: 3.33
   number: 3
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you turn to food when you feel lonely or bored?"
   weight: 3.33
   number: 4
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food as a way to cope with negative emotions?"
   weight: 3.33
   number: 5
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "When you are in a bad mood, do you find yourself eating more?"
   weight: 3.33
   number: 6
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you often eat without thinking when you are nervous?"
   weight: 3.33
   number: 7
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you have the habit of eating when you are anxious about something?"
   weight: 3.33
   number: 8
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you tend to eat more when you are frustrated?"
   weight: 3.33
   number: 9
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more than usual when you are feeling overwhelmed?"
   weight: 3.33
   number: 10
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack frequently even when you don't have a real appetite?"
   weight: 3.33
   number: 11
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to deal with feelings of sadness?"
   weight: 3.33
   number: 12
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely at night?"
   weight: 3.33
   number: 13
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are under pressure?"
   weight: 3.33
   number: 14
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more than normal when you are worried about the future?"
   weight: 3.33
   number: 15
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you have the tendency to eat when you are feeling restless?"
   weight: 3.33
   number: 16
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling disappointed?"
   weight: 3.33
   number: 17
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food as a comfort when you are feeling down?"
   weight: 3.33
   number: 18
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed out about work?"
   weight: 3.33
   number: 19
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find yourself eating more when you are feeling isolated?"
   weight: 3.33
   number: 20
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling tense before an important event?"
   weight: 3.33
   number: 21
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to cope with feelings of emptiness?"
   weight: 3.33
   number: 22
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about a relationship?"
   weight: 3.33
   number: 23
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored during the day?"
   weight: 3.33
   number: 24
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about finances?"
   weight: 3.33
   number: 25
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to deal with feelings of frustration at home?"
   weight: 3.33
   number: 26
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling nervous about a presentation?"
   weight: 3.33
   number: 27
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling lonely on weekends?"
   weight: 3.33
   number: 28
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling overwhelmed by daily tasks?"
   weight: 3.33
   number: 29
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you have the habit of eating when you are feeling anxious about your health?"
   weight: 3.33
   number: 30
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored at work?"
   weight: 3.33
   number: 31
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about a deadline?"
   weight: 3.33
   number: 32
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to cope with feelings of sadness after a loss?"
   weight: 3.33
   number: 33
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely in a new place?"
   weight: 3.33
   number: 34
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling tense during a meeting?"
   weight: 3.33
   number: 35
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about an exam?"
   weight: 3.33
   number: 36
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored at home?"
   weight: 3.33
   number: 37
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about family issues?"
   weight: 3.33
   number: 38
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to deal with feelings of disappointment in yourself?"
   weight: 3.33
   number: 39
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely after a breakup?"
   weight: 3.33
   number: 40
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling tense before a job interview?"
   weight: 3.33
   number: 41
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about a social event?"
   weight: 3.33
   number: 42
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored during a long trip?"
   weight: 3.33
   number: 43
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about a project?"
   weight: 3.33
   number: 44
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to cope with feelings of sadness from a movie?"
   weight: 3.33
   number: 45
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely in a crowd?"
   weight: 3.33
   number: 46
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling tense while driving?"
   weight: 3.33
   number: 47
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about a decision?"
   weight: 3.33
   number: 48
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored in a waiting room?"
   weight: 3.33
   number: 49
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about a performance?"
   weight: 3.33
   number: 50
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to deal with feelings of frustration with a friend?"
   weight: 3.33
   number: 51
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely on a holiday?"
   weight: 3.33
   number: 52
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling tense during a competition?"
   weight: 3.33
   number: 53
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about a medical test?"
   weight: 3.33
   number: 54
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored in a library?"
   weight: 3.33
   number: 55
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about a move?"
   weight: 3.33
   number: 56
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to cope with feelings of sadness from a memory?"
   weight: 3.33
   number: 57
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely in a new job?"
   weight: 3.33
   number: 58
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling tense before a public speech?"
   weight: 3.33
   number: 59
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about a financial decision?"
   weight: 3.33
   number: 60
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored in a classroom?"
   weight: 3.33
   number: 61
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about a wedding?"
   weight: 3.33
   number: 62
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to deal with feelings of disappointment in a relationship?"
   weight: 3.33
   number: 63
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely after a party?"
   weight: 3.33
   number: 64
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling tense during a negotiation?"
   weight: 3.33
   number: 65
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about a travel plan?"
   weight: 3.33
   number: 66
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored in a queue?"
   weight: 3.33
   number: 67
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about a renovation?"
   weight: 3.33
   number: 68
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to cope with feelings of sadness from a book?"
   weight: 3.33
   number: 69
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely in a foreign country?"
   weight: 3.33
   number: 70
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling tense before a sports game?"
   weight: 3.33
   number: 71
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about a career change?"
   weight: 3.33
   number: 72
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored in a museum?"
   weight: 3.33
   number: 73
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about a family gathering?"
   weight: 3.33
   number: 74
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you use food to deal with feelings of frustration with a colleague?"
   weight: 3.33
   number: 75
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling lonely on a business trip?"
   weight: 3.33
   number: 76
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you find that you eat more when you are feeling tense during a presentation at work?"
   weight: 3.33
   number: 77
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling anxious about a health check-up?"
   weight: 3.33
   number: 78
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you snack more when you are feeling bored in a park?"
   weight: 3.33
   number: 79
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]
 
 - question: "Do you eat more when you are feeling stressed about a birthday party?"
   weight: 3.33
   number: 80
+  - answer1: "overjoyed"
+    - types: [3, 10, 20, 12, 13, 9, 0]
+  - answer2: "gratified"
+    - types: [2, 9, 19, 11, 12, 8, 0]
+  - answer3: "satisfied"
+    - types: [1, 8, 18, 10, 11, 7, 0]
+  - answer4: "neutral"
+    - types: [0, 7, 17, 9, 10, 6, 0]
+  - answer5: "disgruntled"
+    - types: [-1, 6, 16, 8, 9, 5, 0]
+  - answer6: "discontented"
+    - types: [-2, 5, 15, 7, 8, 4, 0]
+  - answer7: "seething"
+    - types: [-3, 4, 14, 6, 7, 3, 0]

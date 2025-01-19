@@ -265,6 +265,53 @@
             font-size: 14px;
             margin-top: 5px;
         }
+
+        .comparison-table {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .comparison-table h2 {
+            color: #826666;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .comparison-table th {
+            background-color: #d88c8c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .comparison-table td {
+            background-color: #fce8e8;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid white;
+            font-size: 16px;
+            color: #4a3c3c;
+        }
+
+        .comparison-table .table-source {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+            font-style: italic;
+        }
         </style> 
     </head>
     <body>
@@ -280,7 +327,7 @@
                 <a href="#">· Depression type emotional eating</a>
                 <a href="#">· Trauma type emotional eating</a>
                 <a href="#">· Grief type emotional eating</a>
-                <a href="#">· Other types of emotional eating</a>
+                <a href="#">· Bulimia type eating</a>
               </div>
             </li>
             {% if username %}
@@ -332,6 +379,33 @@
         <br/>
         <br/>
         <br/>
+        <div class="comparison-table">
+            <h2>How to tell the difference between true hunger and emotional eating?</h2>
+            <table>
+                <tr class="header-row">
+                    <th>Physical hunger</th>
+                    <th>Emotional hunger</th>
+                </tr>
+                <tr>
+                    <td>Not suddenly</td>
+                    <td>No reason, suddenly want to eat</td>
+                </tr>
+                <tr>
+                    <td>You don't just want to eat one or two foods</td>
+                    <td>You only want certain foods</td>
+                </tr>
+                <tr>
+                    <td>A sense of fullness can be detected</td>
+                    <td>Unable to detect feelings of fullness</td>
+                </tr>
+                <tr>
+                    <td>You don't feel guilty about eating</td>
+                    <td>Feeling regret and guilt after eating</td>
+                </tr>
+            </table>
+            <p class="table-source">(4 physiological responses to identify true hunger. Source: Mayo Clinic.)</p>
+        </div>
+
         <h2>Have questions? Search here!</h2>
         <div class="search-section" style="margin-top: 60px;">
             <div class="search-container">
