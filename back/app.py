@@ -8,8 +8,9 @@ HIST_FILE = 'hist.yaml'
 def load_questions(filename):
     with open(filename, 'r') as file:
         all_questions = yaml.safe_load(file)
+        test_questions = all_questions['questions']
         # 隨機選擇30個問題
-        selected_questions = random.sample(all_questions, 30)
+        selected_questions = random.sample(test_questions, 30)
         # 重新編號選中的問題
         for i, question in enumerate(selected_questions, 1):
             question['number'] = i
