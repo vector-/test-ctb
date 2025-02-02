@@ -1,0 +1,1678 @@
+types:
+  - 'Boredom and emptiness type emotional eating'
+  - 'Anxiety type emotional eating'
+  - 'Stress type emotional eating'
+  - 'Depression type emotional eating'
+  - 'Trauma type emotional eating'
+  - 'Grief type emotional eating'
+  - 'Bulimia type eating'
+
+questions:
+  - question: "When you feel stressed, do you tend to eat more than usual?"
+    question_zh: "当你感到压力时，你是否倾向于比平时吃得更多？"
+    number: 1
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat when you are not physically hungry?"
+    question_zh: "你会在身体不饿的时候进食吗？"
+    weight: 3.33
+    number: 2
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [20, 12, 13, 10, 14, 15, 18]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [18, 10, 11, 8, 12, 13, 16]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [16, 8, 9, 6, 10, 11, 14]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [14, 6, 7, 4, 8, 9, 12]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [12, 4, 5, 2, 6, 7, 10]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [10, 2, 3, 0, 4, 5, 8]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [8, 0, 1, -2, 2, 3, 6]
+
+  - question: "Do you feel guilty after emotional eating?"
+    question_zh: "情绪性进食后你会感到内疚吗？"
+    weight: 3.33
+    number: 3
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [8, 17, 12, 7, 5, 4, 20]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [6, 15, 10, 5, 3, 2, 18]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [4, 13, 8, 3, 1, 0, 16]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [2, 11, 6, 1, -1, -2, 14]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [0, 9, 4, -1, -3, -4, 12]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 7, 2, -3, -5, -6, 10]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-4, 5, 0, -5, -7, -8, 8]
+
+  - question: "Do you turn to food when you feel lonely or bored?"
+    question_zh: "当你感到孤独或无聊时，你会寻求食物慰藉吗？"
+    weight: 3.33
+    number: 4
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food as a way to cope with negative emotions?"
+    question_zh: "你会用进食来应对负面情绪吗？"
+    weight: 3.33
+    number: 5
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "When you are in a bad mood, do you find yourself eating more?"
+    question_zh: "当你心情不好时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 6
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you often eat without thinking when you are nervous?"
+    question_zh: "当你紧张时，你会经常不假思索地进食吗？"
+    weight: 3.33
+    number: 7
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you have the habit of eating when you are anxious about something?"
+    question_zh: "当你对某事感到焦虑时，你会有进食的习惯吗？"
+    weight: 3.33
+    number: 8
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you tend to eat more when you are frustrated?"
+    question_zh: "当你感到沮丧时，你会倾向于吃得更多吗？"
+    weight: 3.33
+    number: 9
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more than usual when you are feeling overwhelmed?"
+    question_zh: "当你感到不知所措时，你会比平时吃得更多吗？"
+    weight: 3.33
+    number: 10
+    answers:
+      - answer: "overjoyed"
+        answer_zh: "非常开心"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        answer_zh: "满意"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        answer_zh: "还行"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        answer_zh: "一般"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        answer_zh: "不满"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        answer_zh: "不开心"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        answer_zh: "非常不开心"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack frequently even when you don't have a real appetite?"
+    question_zh: "即使没有真正的食欲，你也会经常吃零食吗？"
+    weight: 3.33
+    number: 11
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to deal with feelings of sadness?"
+    question_zh: "你会用食物来应对悲伤的感觉吗？"
+    weight: 3.33
+    number: 12
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely at night?"
+    question_zh: "当你在夜晚感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 13
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are under pressure?"
+    question_zh: "当你承受压力时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 14
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more than normal when you are worried about the future?"
+    question_zh: "当你担心未来时，你会比平常吃得更多吗？"
+    weight: 3.33
+    number: 15
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you have the tendency to eat when you are feeling restless?"
+    question_zh: "当你感到焦躁不安时，你会有进食的倾向吗？"
+    weight: 3.33
+    number: 16
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling disappointed?"
+    question_zh: "当你感到失望时，你会吃得更多吗？"
+    weight: 3.33
+    number: 17
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food as a comfort when you are feeling down?"
+    question_zh: "当你感到情绪低落时，你会用食物来安慰自己吗？"
+    weight: 3.33
+    number: 18
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed out about work?"
+    question_zh: "当你因工作感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 19
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find yourself eating more when you are feeling isolated?"
+    question_zh: "当你感到孤立时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 20
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling tense before an important event?"
+    question_zh: "当你在重要事件前感到紧张时，你会吃得更多吗？"
+    weight: 3.33
+    number: 21
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to cope with feelings of emptiness?"
+    question_zh: "你会用食物来应对空虚感吗？"
+    weight: 3.33
+    number: 22
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about a relationship?"
+    question_zh: "当你对感情关系感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 23
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored during the day?"
+    question_zh: "当你在白天感到无聊时，你会吃更多零食吗？"
+    weight: 3.33
+    number: 24
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about finances?"
+    question_zh: "当你对财务状况感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 25
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to deal with feelings of frustration at home?"
+    question_zh: "你会用食物来应对在家时的挫败感吗？"
+    weight: 3.33
+    number: 26
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling nervous about a presentation?"
+    question_zh: "当你对演讲感到紧张时，你会吃得更多吗？"
+    weight: 3.33
+    number: 27
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling lonely on weekends?"
+    question_zh: "当你在周末感到孤独时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 28
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling overwhelmed by daily tasks?"
+    question_zh: "当你被日常任务压得喘不过气时，你会吃得更多吗？"
+    weight: 3.33
+    number: 29
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you have the habit of eating when you are feeling anxious about your health?"
+    question_zh: "当你对健康状况感到焦虑时，你会有进食的习惯吗？"
+    weight: 3.33
+    number: 30
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored at work?"
+    question_zh: "当你在工作时感到无聊，你会吃更多零食吗？"
+    weight: 3.33
+    number: 31
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about a deadline?"
+    question_zh: "当你对截止日期感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 32
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to cope with feelings of sadness after a loss?"
+    question_zh: "你会用食物来应对失去后的悲伤感吗？"
+    weight: 3.33
+    number: 33
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely in a new place?"
+    question_zh: "当你在新环境中感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 34
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling tense during a meeting?"
+    question_zh: "当你在会议中感到紧张时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 35
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about an exam?"
+    question_zh: "当你对考试感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 36
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored at home?"
+    question_zh: "当你在家感到无聊时，你会吃更多零食吗？"
+    weight: 3.33
+    number: 37
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about family issues?"
+    question_zh: "当你因家庭问题感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 38
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to deal with feelings of disappointment in yourself?"
+    question_zh: "你会用食物来应对对自己失望的感觉吗？"
+    weight: 3.33
+    number: 39
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely after a breakup?"
+    question_zh: "当你在分手后感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 40
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling tense before a job interview?"
+    question_zh: "当你在求职面试前感到紧张时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 41
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about a social event?"
+    question_zh: "当你对社交活动感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 42
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored during a long trip?"
+    question_zh: "当你在长途旅行中感到无聊时，你会吃更多零食吗？"
+    weight: 3.33
+    number: 43
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about a project?"
+    question_zh: "当你对项目感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 44
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to cope with feelings of sadness from a movie?"
+    question_zh: "你会用食物来应对看电影时产生的悲伤感吗？"
+    weight: 3.33
+    number: 45
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely in a crowd?"
+    question_zh: "当你在人群中感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 46
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling tense while driving?"
+    question_zh: "当你在开车时感到紧张，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 47
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about a decision?"
+    question_zh: "当你对某个决定感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 48
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored in a waiting room?"
+    question_zh: "当你在等候室感到无聊时，你会吃更多零食吗？"
+    weight: 3.33
+    number: 49
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about a performance?"
+    question_zh: "当你对表现感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 50
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to deal with feelings of frustration with a friend?"
+    question_zh: "你会用食物来应对与朋友之间的挫败感吗？"
+    weight: 3.33
+    number: 51
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely on a holiday?"
+    question_zh: "当你在假期感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 52
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling tense during a competition?"
+    question_zh: "当你在比赛中感到紧张时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 53
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about a medical test?"
+    question_zh: "当你对医疗检查感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 54
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored in a library?"
+    question_zh: "当你在图书馆感到无聊时，你会吃更多零食吗？"
+    weight: 3.33
+    number: 55
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about a move?"
+    question_zh: "当你对搬家感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 56
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to cope with feelings of sadness from a memory?"
+    question_zh: "你会用食物来应对回忆带来的悲伤感吗？"
+    weight: 3.33
+    number: 57
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely in a new job?"
+    question_zh: "当你在新工作中感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 58
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling tense before a public speech?"
+    question_zh: "当你在公开演讲前感到紧张时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 59
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about a financial decision?"
+    question_zh: "当你对财务决策感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 60
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored in a classroom?"
+    question_zh: "当你在教室里感到无聊时，你会吃更多零食吗？"
+    weight: 3.33
+    number: 61
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about a wedding?"
+    question_zh: "当你对婚礼感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 62
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to deal with feelings of disappointment in a relationship?"
+    question_zh: "你会用食物来应对感情关系中的失望感吗？"
+    weight: 3.33
+    number: 63
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely after a party?"
+    question_zh: "当你在派对结束后感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 64
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling tense during a negotiation?"
+    question_zh: "当你在谈判中感到紧张时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 65
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about a travel plan?"
+    question_zh: "当你对旅行计划感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 66
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored in a queue?"
+    question_zh: "当你在排队时感到无聊，你会吃更多零食吗？"
+    weight: 3.33
+    number: 67
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about a renovation?"
+    question_zh: "当你对装修感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 68
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to cope with feelings of sadness from a book?"
+    question_zh: "你会用食物来应对看书时产生的悲伤感吗？"
+    weight: 3.33
+    number: 69
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely in a foreign country?"
+    question_zh: "当你在国外感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 70
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling tense before a sports game?"
+    question_zh: "当你在运动比赛前感到紧张时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 71
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about a career change?"
+    question_zh: "当你对职业变动感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 72
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored in a museum?"
+    question_zh: "当你在博物馆感到无聊时，你会吃更多零食吗？"
+    weight: 3.33
+    number: 73
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about a family gathering?"
+    question_zh: "当你对家庭聚会感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 74
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you use food to deal with feelings of frustration with a colleague?"
+    question_zh: "你会用食物来应对与同事之间的挫败感吗？"
+    weight: 3.33
+    number: 75
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling lonely on a business trip?"
+    question_zh: "当你在商务旅行中感到孤独时，你会吃得更多吗？"
+    weight: 3.33
+    number: 76
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you find that you eat more when you are feeling tense during a presentation at work?"
+    question_zh: "当你在工作演示中感到紧张时，你会发现自己吃得更多吗？"
+    weight: 3.33
+    number: 77
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling anxious about a health check-up?"
+    question_zh: "当你对体检感到焦虑时，你会吃得更多吗？"
+    weight: 3.33
+    number: 78
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you snack more when you are feeling bored in a park?"
+    question_zh: "当你在公园感到无聊时，你会吃更多零食吗？"
+    weight: 3.33
+    number: 79
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
+
+  - question: "Do you eat more when you are feeling stressed about a birthday party?"
+    question_zh: "当你对生日派对感到压力时，你会吃得更多吗？"
+    weight: 3.33
+    number: 80
+    answers:
+      - answer: "overjoyed"
+        types: [3, 10, 20, 12, 13, 9, 0]
+      - answer: "gratified"
+        types: [2, 9, 19, 11, 12, 8, 0]
+      - answer: "satisfied"
+        types: [1, 8, 18, 10, 11, 7, 0]
+      - answer: "neutral"
+        types: [0, 7, 17, 9, 10, 6, 0]
+      - answer: "disgruntled"
+        types: [-1, 6, 16, 8, 9, 5, 0]
+      - answer: "discontented"
+        types: [-2, 5, 15, 7, 8, 4, 0]
+      - answer: "seething"
+        types: [-3, 4, 14, 6, 7, 3, 0]
