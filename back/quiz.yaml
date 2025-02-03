@@ -8,8 +8,8 @@ types:
   - 'Bulimia type eating'
 
 questions:
-  - question: "When you feel stressed, do you tend to eat more than usual?"
-    question_zh: "当你感到压力时，你是否倾向于比平时吃得更多？"
+  - question: "When you feel stressed, you tend to eat more than usual."
+    question_zh: "当你感到压力时，你倾向于比平时吃得更多。"
     number: 1
     answers:
       - types: [3, 10, 20, 12, 13, 9, 0]

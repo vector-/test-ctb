@@ -352,13 +352,13 @@ suo
                             <label for="question{{quiz.number}}" class="question-label">
                                 <p class="question-text">{{quiz.number}}. {{quiz.question}}</p>
                                 <div class="option-container">
-                                    <div class="option" data-text="overjoyed"></div>
-                                    <div class="option" data-text="gratified"></div>
-                                    <div class="option" data-text="satisfied"></div>
-                                    <div class="option" data-text="neutral"></div>
-                                    <div class="option" data-text="disgruntled"></div>
-                                    <div class="option" data-text="discontented"></div>
-                                    <div class="option" data-text="seething"></div>
+                                    <div class="option" data-text="overjoyed" data-value={{quiz.answers[0].types}}></div>
+                                    <div class="option" data-text="gratified" data-value={{quiz.answers[1].types}}></div>
+                                    <div class="option" data-text="satisfied" data-value={{quiz.answers[2].types}}></div>
+                                    <div class="option" data-text="neutral" data-value={{quiz.answers[3].types}}></div>
+                                    <div class="option" data-text="disgruntled" data-value={{quiz.answers[4].types}}></div>
+                                    <div class="option" data-text="discontented" data-value={{quiz.answers[5].types}}></div>
+                                    <div class="option" data-text="seething" data-value={{quiz.answers[6].types}}></div>
                                 </div>
                             </label>
                             <hr>
