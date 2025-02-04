@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify, request, session, redirect, url_for
 import yaml
+import numpy as np
 import random
 QUIZ_FILE = 'quiz.yaml'
 PASS_FILE = 'passwd.yaml'
@@ -26,14 +27,15 @@ def save_passwords(filename, passwords):
         yaml.dump(passwords, file, default_flow_style=False)
 
 def calculate(choices):
-    total_questions = len(choices)
-    choice_count = {}
+    # total_questions = len(choices)
+    # choice_count = {}
+    result = [0, 0, 0, 0, 0, 0, 0]
     for choice in choices:
-        if choice in choice_count:
-            choice_count[choice] += 1
-        else:
-            choice_count[choice] = 1
-    percentages = {choice: (count / total_questions) * 100 for choice, count in choice_count.items()}
+        list_1 = eval(choice)
+        t_1 = np.array(list_1)
+        result = result + t_1
+    print(result)
+    percentages = {choice: 0}
     return jsonify(percentages)
 
 

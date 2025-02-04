@@ -183,12 +183,13 @@
         .question-text {
             transition: color 0.3s ease;
         }
-suo
+
         .option-container {
             transition: max-height 0.3s ease, opacity 0.3s ease;
             max-height: 200px;
             opacity: 1;
             overflow: hidden;
+            padding: 10px;
         }
         .question-checkbox:checked + .question-label .question-text {
             color: #999999da;
@@ -352,13 +353,13 @@ suo
                             <label for="question{{quiz.number}}" class="question-label">
                                 <p class="question-text">{{quiz.number}}. {{quiz.question}}</p>
                                 <div class="option-container">
-                                    <div class="option" data-text="overjoyed" data-value={{quiz.answers[0].types}}></div>
-                                    <div class="option" data-text="gratified" data-value={{quiz.answers[1].types}}></div>
-                                    <div class="option" data-text="satisfied" data-value={{quiz.answers[2].types}}></div>
-                                    <div class="option" data-text="neutral" data-value={{quiz.answers[3].types}}></div>
-                                    <div class="option" data-text="disgruntled" data-value={{quiz.answers[4].types}}></div>
-                                    <div class="option" data-text="discontented" data-value={{quiz.answers[5].types}}></div>
-                                    <div class="option" data-text="seething" data-value={{quiz.answers[6].types}}></div>
+                                    <div class="option" data-text="overjoyed" data-value="{{quiz.answers[0].types}}"></div>
+                                    <div class="option" data-text="gratified" data-value="{{quiz.answers[1].types}}"></div>
+                                    <div class="option" data-text="satisfied" data-value="{{quiz.answers[2].types}}"></div>
+                                    <div class="option" data-text="neutral" data-value="{{quiz.answers[3].types}}"></div>
+                                    <div class="option" data-text="disgruntled" data-value="{{quiz.answers[4].types}}"></div>
+                                    <div class="option" data-text="discontented" data-value="{{quiz.answers[5].types}}"></div>
+                                    <div class="option" data-text="seething" data-value="{{quiz.answers[6].types}}"></div>
                                 </div>
                             </label>
                             <hr>
@@ -384,80 +385,80 @@ suo
             <div id="resultContent"></div>
         </div>
         <script>
-            function submitQuiz() {
-                // 收集所有答案
-                const choices = [];
-                const options = document.querySelectorAll('.option-container');
-                options.forEach(container => {
-                    const selectedOption = container.querySelector('.option:focus');
-                    if (selectedOption) {
-                        choices.push(selectedOption.getAttribute('data-text'));
-                    }
-                });
-                if (choices.length === 0) {
-                    alert('Please answer at least one question before submitting.');
-                    return;
-                }
-                // 發送答案到後端
-                fetch('/submit', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ choices: choices })
-                })
-                .then(response => response.json())
-                .then(result => {
-                    // 顯示結果
-                    const resultContainer = document.getElementById('resultContainer');
-                    const resultContent = document.getElementById('resultContent');
-                    resultContent.innerHTML = ''; // 清空之前的結果
+            // function submitQuiz() {
+            //     // 收集所有答案
+            //     const choices = [];
+            //     const options = document.querySelectorAll('.option-container');
+            //     options.forEach(container => {
+            //         const selectedOption = container.querySelector('.option:focus');
+            //         if (selectedOption) {
+            //             choices.push(selectedOption.getAttribute('data-text'));
+            //         }
+            //     });
+            //     if (choices.length === 0) {
+            //         alert('Please answer at least one question before submitting.');
+            //         return;
+            //     }
+            //     // 發送答案到後端
+            //     fetch('/submit', {
+            //         method: 'POST',
+            //         headers: {
+            //             'Content-Type': 'application/json',
+            //         },
+            //         body: JSON.stringify({ choices: choices })
+            //     })
+            //     .then(response => response.json())
+            //     .then(result => {
+            //         // 顯示結果
+            //         const resultContainer = document.getElementById('resultContainer');
+            //         const resultContent = document.getElementById('resultContent');
+            //         resultContent.innerHTML = ''; // 清空之前的結果
 
-                    for (const [option, percentage] of Object.entries(result)) {
-                        const resultItem = document.createElement('div');
-                        resultItem.className = 'result-item';
-                        resultItem.innerHTML = `
-                            <strong>${option}:</strong> ${percentage.toFixed(1)}%
-                        `;
-                        resultContent.appendChild(resultItem);
-                    }
-                    // 顯示結果容器
-                    resultContainer.style.display = 'block';
-                    // 平滑滾動到結果區域
-                    resultContainer.scrollIntoView({ behavior: 'smooth' });
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('Submission failed. Please try again later.');
-                });
-                }
-                // 為每個選項添加鍵盤事件處理
-                document.querySelectorAll('.option').forEach(option => {
-                    option.addEventListener('keypress', function(e) {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                            e.preventDefault();
-                            this.focus();
-                        }
-                    });
-                });
-                document.querySelectorAll('.option').forEach(option => {
-                option.addEventListener('click', function(e) {
-                    e.stopPropagation(); 
-                    const container = this.closest('.option-container');
-                    container.querySelectorAll('.option').forEach(opt => {
-                        opt.classList.remove('selected');
-                    });
-                    // 為當前選項添加選中狀態
-                    this.classList.add('selected');
-                });
-                // 保留原有的鍵盤事件處理
-                option.addEventListener('keypress', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        this.click(); // 觸發點擊事件
-                    }
-                });
-                });
+            //         for (const [option, percentage] of Object.entries(result)) {
+            //             const resultItem = document.createElement('div');
+            //             resultItem.className = 'result-item';
+            //             resultItem.innerHTML = `
+            //                 <strong>${option}:</strong> ${percentage.toFixed(1)}%
+            //             `;
+            //             resultContent.appendChild(resultItem);
+            //         }
+            //         // 顯示結果容器
+            //         resultContainer.style.display = 'block';
+            //         // 平滑滾動到結果區域
+            //         resultContainer.scrollIntoView({ behavior: 'smooth' });
+            //     })
+            //     .catch(error => {
+            //         console.error('Error:', error);
+            //         alert('Submission failed. Please try again later.');
+            //     });
+            //     }
+            //     // 為每個選項添加鍵盤事件處理
+            //     document.querySelectorAll('.option').forEach(option => {
+            //         option.addEventListener('keypress', function(e) {
+            //             if (e.key === 'Enter' || e.key === ' ') {
+            //                 e.preventDefault();
+            //                 this.focus();
+            //             }
+            //         });
+            //     });
+            //     document.querySelectorAll('.option').forEach(option => {
+            //     option.addEventListener('click', function(e) {
+            //         e.stopPropagation(); 
+            //         const container = this.closest('.option-container');
+            //         container.querySelectorAll('.option').forEach(opt => {
+            //             opt.classList.remove('selected');
+            //         });
+            //         // 為當前選項添加選中狀態
+            //         this.classList.add('selected');
+            //     });
+            //     // 保留原有的鍵盤事件處理
+            //     option.addEventListener('keypress', function(e) {
+            //         if (e.key === 'Enter' || e.key === ' ') {
+            //             e.preventDefault();
+            //             this.click(); // 觸發點擊事件
+            //         }
+            //     });
+            //     });
             function submitQuiz() {
                 // 修改收集答案的方式
                 const choices = [];
@@ -465,11 +466,13 @@ suo
                 questions.forEach((question, index) => {
                     const selectedOption = question.querySelector('.option.selected');
                     if (selectedOption) {
-                        choices.push(selectedOption.getAttribute('data-text'));
+                        // choices.push(selectedOption.getAttribute('data-text'));
+                        choices.push(selectedOption.getAttribute('data-value'));
                     }
                 });
+
                 if (choices.length === 0) {
-                    alert('Please answer at least one question before submitting.');
+                    alert('Please answer all the questions before submitting.');
                     return;
                 }
                 // 發送答案到後端
@@ -504,7 +507,18 @@ suo
                     alert('Submission failed. Please try again later.');
                 });
                 }
-
+            document.querySelectorAll('.option').forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.stopPropagation(); 
+            const container = this.closest('.option-container');
+            container.querySelectorAll('.option').forEach(opt => {
+                opt.classList.remove('selected');  // 移除所有选项的选中状态
+            });
+        // 为当前选项添加选中状态
+            this.classList.add('selected');  // 添加 selected 类
+        });
+});
+            
             let currentPage = 1;
             const questionsPerPage = 10;
             console.info('welcome: ');
